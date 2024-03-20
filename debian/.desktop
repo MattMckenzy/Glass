@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=GNOME;GTK;Utility;
+Comment[en_CA]=Simple Frameless Browser!
+Comment=Simple Frameless Browser!
+Exec=glass --no-zygote --no-sandbox
+GenericName[en_CA]=glass
+GenericName=glass
+Icon=glass
+MimeType=
+Name[en_CA]=glass
+Name=glass
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

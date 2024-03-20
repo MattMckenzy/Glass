@@ -1,0 +1,35 @@
+{
+  "name": "glass",
+  "productName": "glass",
+  "version": "1.0.3",
+  "description": "Simple Frameless Browser!",
+  "main": "./src/main.js",
+  "icon": "./src/resources/logo.png",
+  "scripts": {
+    "start": "electron-forge start -- --no-sandbox --no-zygote",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.3.0",
+    "@electron-forge/maker-deb": "^7.3.0",
+    "@electron-forge/maker-rpm": "^7.3.0",
+    "@electron-forge/maker-squirrel": "^7.3.0",
+    "@electron-forge/maker-zip": "^7.3.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.3.0",
+    "@electron-forge/plugin-fuses": "^7.3.0",
+    "@electron/fuses": "^1.7.0",
+    "electron": "github:castlabs/electron-releases#v29.1.4+wvcus"
+  },
+  "keywords": [],
+  "author": {
+    "name": "MattMckenzy",
+    "email": "mattmckenzy@ctfam.ca"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-json-storage": "^4.6.0",
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
