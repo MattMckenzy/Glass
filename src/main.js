@@ -20,6 +20,7 @@ const defaultHeight = 720;
 const defaultSettingsSaveTimeout = 3000;
 const defaultGlassCloseTimeout = 5000;
 const defaultUserAgent = 'Mozilla/5.0 (Glass) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36';
+const startLocation = 'https://www.crunchyroll.com';
 const defaultLocations = [
   { url: 'https://www.netflix.com', icon: 'netflix' },
   { url: 'https://www.disneyplus.com', icon: 'disneyplus' },
@@ -185,7 +186,7 @@ async function glassInitialization() {
 
   // Initial Loads
   mainWindow.loadFile(path.join(__dirname, 'default.html'));
-  contentView.webContents.loadURL('https://www.crunchyroll.com', { userAgent: configuration.settings.userAgent });
+  contentView.webContents.loadURL(configuration.settings.startLocation, { userAgent: configuration.settings.userAgent });
   glassView.webContents.loadFile(path.join(__dirname, 'glass.html'));
 };
 
@@ -308,6 +309,11 @@ async function getConfiguration() {
 
   if (!configuration.settings.userAgent) {
     configuration.settings.userAgent = defaultUserAgent;
+    dirty = true;
+  }
+
+  if (!configuration.settings.startLocation) {
+    configuration.settings.startLocation = startLocation;
     dirty = true;
   }
 

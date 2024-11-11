@@ -18,7 +18,7 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.3.0",
     "@electron-forge/plugin-fuses": "^7.3.0",
     "@electron/fuses": "^1.7.0",
-    "electron": "github:castlabs/electron-releases#v31.7.3+wvcus"
+    "electron": "github:castlabs/electron-releases#v32.2.3+wvcus"
   },
   "keywords": [],
   "author": {
