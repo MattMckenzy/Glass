@@ -1,7 +1,7 @@
 {
   "name": "glass",
   "productName": "glass",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Simple Frameless Browser! Perfect for consuming media from any location.",
   "main": "./src/main.js",
   "icon": "./src/resources/logo.png",

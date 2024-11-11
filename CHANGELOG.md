@@ -2,7 +2,7 @@
 
 All notable changes to "Glass" will be documented in this file.
 
-## 1.2.0
+## 1.2.1
 
 - Added startLocation setting; bumped up castlabs electron verions.
 

@@ -36,6 +36,6 @@ Nothing Planned.
 ### 1.1.1
 
 - Initial release!
-### 1.2.0
+### 1.2.1
 
 - Added startLocation setting; bumped up castlabs electron verions.
