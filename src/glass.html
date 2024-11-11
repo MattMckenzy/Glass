@@ -1,23 +1,46 @@
-<div id="glass-bar">
-  <div id="dragger">
-    <svg viewBox="0 0 32 32">
-      <rect height="4" width="4" y="4" x="0" />
-      <rect height="4" width="4" y="12" x="0" />
-      <rect height="4" width="4" y="20" x="0" />
-      <rect height="4" width="4" y="28" x="0" />
-      <rect height="4" width="4" y="4" x="8" />
-      <rect height="4" width="4" y="12" x="8" />
-      <rect height="4" width="4" y="20" x="8" />
-      <rect height="4" width="4" y="28" x="8" />
-      <rect height="4" width="4" y="4" x="16" />
-      <rect height="4" width="4" y="12" x="16" />
-      <rect height="4" width="4" y="20" x="16" />
-      <rect height="4" width="4" y="28" x="16" />
-      <rect height="4" width="4" y="4" x="24" />
-      <rect height="4" width="4" y="12" x="24" />
-      <rect height="4" width="4" y="20" x="24" />
-      <rect height="4" width="4" y="28" x="24" />
-    </svg>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Glass</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='./swiper-bundle.min.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./glass.css'>
+</head>
+<body>
+  <div id="glass-bar">
+    <div id="button4" class="button button-left hide"></div>
+    <div id="button5" class="button button-left hide"></div>
+    <div id="button6" class="button button-left hide"></div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+      </div>
+    </div>
+    <div id="button1" class="button button-right hide"></div>
+    <div id="button2" class="button button-right hide"></div>
+    <div id="button3" class="button button-right hide"></div>
   </div>
-  <div id="closer">✕</div>
-</div>
+  <script src="./swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper", {
+      enabled: true,
+      loop: true,
+      grabCursor: true,
+      mousewheel: true,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      freeMode: {
+        enabled: true,
+        sticky: false,
+        momentum: true,
+        momentumBounce: false,
+        minimumVelocity: 0,
+        momentumRatio: 3,
+        momentumVelocityRatio: 3
+      },
+      watchOverflow: true,
+      resizeObserver: true
+    });
+  </script>
+</body>
+</html>

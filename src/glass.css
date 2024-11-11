@@ -1,25 +1,26 @@
-::-webkit-scrollbar { width: 0px; }
+html,
+body {
+  background-color: transparent;
+}
 
 #glass-bar {
-  width: 75%;
+  width: 100%;
   height: 16px;
+  left: 0;
+  top: 0;
   background-color: transparent;
   opacity: 0;
   position: fixed;
-  top: 0;
-  left: 12.5%;
   margin: auto;
   z-index: 2147483647;
   border-radius: 0 0 16px 16px;
-  box-shadow: 4px 1px 16px -4px grey inset, 0px 4px 8px -2px teal inset;
+  box-shadow: 0px -1px 16px -4px #636363 inset, 0px -3px 8px -2px teal inset;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 #glass-bar.out {
-  width: 100%;
   height: 120px;
-  left: 0;
   background-color: rgba(35, 35, 35, 0.9);
   opacity: 1;
 }
@@ -28,33 +29,119 @@
   opacity: 1;
 }
 
-#glass-bar>#dragger {
-  cursor: move;
-  width: 16px;
-  height: 16px;
-  left: 0.75em;
-  top: -20px;
+.button {
+  color: #fff;
+  opacity: 0.5;
+  font-size: large;
+  cursor: pointer;
   position: absolute;
+  top: -40px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.button.button-left {
+  left: 16px;
+}
+
+.button.button-right {
+  right: 16px;
+}
+
+.button.move {
+  cursor: move;
+  opacity: 1;
   -webkit-app-region: drag;
 }
 
-#glass-bar.out>#dragger {
-  top: 0.75em;
+.button.toggled {
+  color: #40e640
 }
 
-/* coloring the individual dots within each group */
-#glass-bar>#dragger rect {
-  fill: #ccc;
+.button.close {
+  transform: scaleX(1.5);
 }
 
-#glass-bar>#closer {
-  cursor: pointer;
-  right: 0.5em;
-  font-size: 22px;
-  top: -20px;
+.button:hover {
+  opacity: 1;
+}
+
+.button.close:hover {
+  color: #e64040;
+}
+
+#glass-bar.out>#button1,
+#glass-bar.out>#button4 {
+  top: 18px;
+}
+
+#glass-bar.out>#button2,
+#glass-bar.out>#button5 {
+  top: 52px;
+}
+
+#glass-bar.out>#button3,
+#glass-bar.out>#button6 {
+  top: 86px;
+}
+
+.swiper {
   position: absolute;
+  width: calc(100% - 92px);
+  height: 102px;
+  top: -102px;
+  left: 40px;
+  padding: 0px 6px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;  
 }
 
-#glass-bar.out>#closer {
-  top: 0.4em;
+#glass-bar.out>.swiper {
+  top: 9px;
+}
+
+.swiper::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.swiper.scroll {
+  mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 1) 7%, rgba(0, 0, 0, 1) 93%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 1) 7%, rgba(0, 0, 0, 1) 93%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0) 100%);
+}
+
+.swiper > .swiper-wrapper {
+  height: 102px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.swiper.scroll > .swiper-wrapper {
+  height: 102px;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.swiper-slide {
+  cursor: pointer;
+  height: 86px;
+  width: 86px;
+  overflow: hidden;
+  background-color: #424242;
+  box-shadow: 0px 0px 6px 4px #212121;
+  border: 2px #424242 solid;
+  border-radius: 16px;
+}
+
+.swiper-slide>img {
+  height: 86px;
+  width: 86px;
+}
+
+.hide {
+  display: none;
 }

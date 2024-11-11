@@ -21,7 +21,7 @@ module.exports = {
       name: '@electron-forge/maker-deb',
       config: {
         options: {
-          desktopTemplate: './debian/.desktop',
+          desktopTemplate: './src/resources/.desktop',
           icon: './src/resources/logo.png'
         }
       }
