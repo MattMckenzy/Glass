@@ -2,6 +2,10 @@
 
 All notable changes to "Glass" will be documented in this file.
 
+## 1.2.3
+
+- FIxed package.json typo.
+
 ## 1.2.2
 
 - Bumped up castlabs/electron version
