@@ -45,3 +45,6 @@ Nothing Planned.
 ### 1.2.3
 
 - FIxed package.json typo.
+### 1.2.4
+
+- Fixed electron dependency.

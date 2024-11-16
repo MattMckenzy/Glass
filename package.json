@@ -1,7 +1,7 @@
 {
   "name": "glass",
   "productName": "glass",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Simple Frameless Browser! Perfect for consuming media from any location.",
   "main": "./src/main.js",
   "icon": "./src/resources/logo.png",
@@ -17,7 +17,8 @@
     "@electron-forge/maker-zip": "^7.3.0",
     "@electron-forge/plugin-auto-unpack-natives": "^7.3.0",
     "@electron-forge/plugin-fuses": "^7.3.0",
-    "@electron/fuses": "^1.7.0"
+    "@electron/fuses": "^1.7.0",
+    "electron": "github:castlabs/electron-releases#v32.2.4+wvcus"
   },
   "keywords": [],
   "author": {
@@ -26,7 +27,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "electron": "github:castlabs/electron-releases#v32.2.4+wvcus",
     "electron-json-storage": "^4.6.0",
     "fs-extra": "^11.2.0"
   }
