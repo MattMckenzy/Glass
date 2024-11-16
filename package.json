@@ -18,7 +18,6 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.3.0",
     "@electron-forge/plugin-fuses": "^7.3.0",
     "@electron/fuses": "^1.7.0",
-    "electron": "github:castlabs/electron-releases#v32.2.3+wvcus"
   },
   "keywords": [],
   "author": {
@@ -27,6 +26,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "electron": "github:castlabs/electron-releases#v32.2.4+wvcus",
     "electron-json-storage": "^4.6.0",
     "fs-extra": "^11.2.0"
   }
