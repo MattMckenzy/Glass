@@ -48,3 +48,6 @@ Nothing Planned.
 ### 1.2.4
 
 - Fixed electron dependency.
+### 1.2.5
+
+- Fixed symlink creation
