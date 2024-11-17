@@ -1,0 +1,2 @@
+#/bin/bash
+node_modules/electron/dist/electron . --no-zygote --no-sandbox

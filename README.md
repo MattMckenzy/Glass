@@ -51,3 +51,6 @@ Nothing Planned.
 ### 1.2.5
 
 - Fixed symlink creation
+### 1.3.0
+
+- Change deployment method, removed packaging to permit castlabs/electron to function
