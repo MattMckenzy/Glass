@@ -2,6 +2,10 @@
 
 All notable changes to "Glass" will be documented in this file.
 
+## 1.3.3
+
+- Bumped package.json version
+
 ## 1.3.2
 
 - Fixed PKGBUILD
