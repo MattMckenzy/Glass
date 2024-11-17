@@ -2,6 +2,10 @@
 
 All notable changes to "Glass" will be documented in this file.
 
+## 1.3.1
+
+- Updated package.json version
+
 ## 1.3.0
 
 - Change deployment method, removed packaging to permit castlabs/electron to function
