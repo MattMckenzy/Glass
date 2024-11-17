@@ -66,3 +66,6 @@ Nothing Planned.
 ### 1.3.4
 
 - Fixed PKGBUILD redux
+### 1.3.5
+
+- Bunped package.json version
