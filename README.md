@@ -63,3 +63,6 @@ Nothing Planned.
 ### 1.3.3
 
 - Bumped package.json version
+### 1.3.4
+
+- Fixed PKGBUILD redux
