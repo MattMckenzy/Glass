@@ -57,3 +57,6 @@ Nothing Planned.
 ### 1.3.1
 
 - Updated package.json version
+### 1.3.2
+
+- Fixed PKGBUILD
