@@ -2,6 +2,10 @@
 
 All notable changes to "Glass" will be documented in this file.
 
+## 1.3.7
+
+- Fixed glass script
+
 ## 1.3.6
 
 - Updated glass script

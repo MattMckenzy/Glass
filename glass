@@ -1,3 +1,3 @@
 #!/bin/bash
 SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
-"$SCRIPT_DIR/node_modules/electron/dist/electron" . --no-zygote --no-sandbox
+"$SCRIPT_DIR/node_modules/electron/dist/electron" "$SCRIPT_DIR" --no-zygote --no-sandbox

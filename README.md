@@ -72,3 +72,6 @@ Nothing Planned.
 ### 1.3.6
 
 - Updated glass script
+### 1.3.7
+
+- Fixed glass script
