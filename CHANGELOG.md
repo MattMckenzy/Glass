@@ -2,6 +2,10 @@
 
 All notable changes to "Glass" will be documented in this file.
 
+## 1.2.5
+
+- Fixed symlink creation
+
 ## 1.2.4
 
 - Fixed electron dependency.

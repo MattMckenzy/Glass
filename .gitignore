@@ -90,3 +90,6 @@ typings/
 
 # Electron-Forge
 out/
+
+# Nested git repositories
+**/.git
